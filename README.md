@@ -200,7 +200,7 @@ The `python_img_sprite_generator/` directory contains a Python-based tool for au
 
 ### Example Output
 
-The tool generates Verilog modules like `zhong.v` with:
+The tool generates Verilog modules with:
 - Bitmap data stored as wire arrays
 - Alpha channel support for transparency
 - Coordinate-based pixel lookup logic
