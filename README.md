@@ -155,7 +155,7 @@ python_img_sprite_generator/           # Sprite generation tools
 
 - **FPGA Device**: Xilinx Artix-7 (XC7A35T-1CPG236C)
 - **Clock Frequency**: 100 MHz system clock
-- **Display**: 128x64 OLED via SPI interface
+- **Display**: 96x64 OLED via SPI interface
 - **Input**: PS2 mouse protocol
 - **Languages**: Verilog (majority), VHDL (PS2 interface)
 - **Design Approach**: Modular design with separate modules for graphics, input, and game logic
@@ -174,11 +174,12 @@ The `python_img_sprite_generator/` directory contains a Python-based tool for au
 
 ### Features
 
-- **Image Processing**: Converts PNG/GIF images into FPGA-compatible sprite data
-- **Color Quantization**: Uses PIL library to reduce colors for efficient FPGA storage
-- **Multiple Quantization Modes**: Supports various color quantization algorithms (median cut, maximum coverage, with/without k-means)
-- **Verilog Generation**: Automatically generates complete Verilog modules with sprite data
-- **OLED Display Format**: Outputs 16-bit color format compatible with the project's OLED display
+- Converts PNG/GIF images into FPGA-compatible sprite data
+- Uses PIL library to reduce colors using quantization for efficient FPGA storage
+- Automatically generates complete Verilog modules with sprite data
+- Bitmap data stored as wire arrays
+- Alpha channel support for transparency
+- Outputs 16-bit RGB565 color format for the Pmod OLED
 
 ### Usage
 
@@ -194,19 +195,11 @@ The `python_img_sprite_generator/` directory contains a Python-based tool for au
 ### Requirements
 
 - Python 3.x
-- PIL (Pillow) library
+- PIL (Pillow) 
 - NumPy
+- Ipython 
 - Jupyter Notebook
 
-### Example Output
-
-The tool generates Verilog modules with:
-- Bitmap data stored as wire arrays
-- Alpha channel support for transparency
-- Coordinate-based pixel lookup logic
-- 16-bit RGB565 color format
-
-This tool significantly simplifies the process of adding custom sprites and graphics to FPGA projects, replacing manual bitmap creation with automated image processing.
 
 ## Aknowledgements
 Special thanks to:
