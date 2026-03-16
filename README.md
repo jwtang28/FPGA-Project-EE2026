@@ -205,4 +205,4 @@ The `python_img_sprite_generator/` directory contains a Python-based tool for au
 Special thanks to:
 - EE2026 Digital Design course instructors and teaching assistants
 - My project teammates, Jasmin, WeiZhi and Kit
-- https://github.com/nvbinh15/FPGA-Project-EE2026/tree/main/Python_helpers for inspring the idea of using python to convert image files into verilog sprites
+- https://github.com/nvbinh15/FPGA-Project-EE2026/tree/main/Python_helpers for inspiring the idea of using python to convert image files into verilog sprites
