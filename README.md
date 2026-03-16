@@ -208,7 +208,7 @@ The tool generates Verilog modules like `zhong.v` with:
 
 This tool significantly simplifies the process of adding custom sprites and graphics to FPGA projects, replacing manual bitmap creation with automated image processing.
 
-### Aknowledgements
+## Aknowledgements
 Special thanks to:
 - EE2026 Digital Design course instructors and teaching assistants
 - My project teammates, Jasmin, WeiZhi and Kit
